@@ -1,12 +1,18 @@
 let jump;
 
-function setup() {
+function preload() {
+   
     
+}
+
+function setup() {
+
     initPose();
 
-    jump=false;
+    jump = false;
     //var keys = Object.keys(dino_runner);
     //console.log(keys)
+
 }
 
 function draw() {
@@ -17,7 +23,7 @@ function draw() {
             dino_runner.tRex.startJump(dino_runner.currentSpeed);
         }
         console.log('key pressed')
-        jump=false;
+        jump = false;
     }
 
 }
